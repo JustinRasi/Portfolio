@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/891d21280e.js" crossorigin="anonymous"></script>
+    <script src="navbar.js" defer></script>
+    <title>Portfolio Website - Justin Rasi</title>
+</head>
+
+<header>
+</header>
+<body>
+<div class="container">
+    <div class="title">
+        <div class="title_sector">
+            <h2><span>Hi.</span><span id="message"> I'm Justin</span></h2>
+            <p id="learning">A learning Software Developer<br>at UMB company</p>
+            <a class="button" href="#contact_me">Contact Me</a>
+            </div>
+        <div class="platform-list">
+                <i class="fab fa-github"> Github</i><br>
+                <i class="fa-brands fa-linkedin"> LinkedIn</i><br>
+                <i class="fa-brands fa-twitter"> Twitter</i>
+        </div>
+    </div>
+    <div class="navigation">
+        <div class="navbar">
+            <p>Justin Rasi</p>
+            <a id="contact" href="#contact_me">Contact me</a>
+            <a href="#projects">Projects</a>
+            <a href="#knowledge">Knowledge</a>
+            <a href="#about">About me</a>
+        </div>
+    </div>
+
+    <div class="about" id="about">
+        <div class="about_sector">
+            <div class="about_sector_content">
+            <h2><span class="word-underline">Abo</span>ut me</h2>
+            <p>I am a person who loves challenges, I want to learn new things and improve myself all the time. At the moment I am in my first year of apprenticeship as an application developer. In my free time I do sports as a balance to sitting in front of the computer every day. As already mentioned, I work at UMB, a Swiss IT company. I offer many skills as a person as well as in my work.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="knowledge" class="knowledge">
+        <div class="knowledge_sector">
+            <h2><span class="word-underline">Know</span>ledge</h2>
+            <div class="knowledge_grid-container">
+                <div class="knowledge_item">Technical Skills
+                    <p>HTML<br>CSS<br>Javascript<br>MySQL<br>React Native</p>
+                </div>
+                <div class="knowledge_item">Tools
+                    <p>Git<br>Figma<br>Webstorm IDE<br>Material Design / Lite</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="projects" class="projects">
+        <div class="projects_sector">
+            <h2><span class="word-underline">Proj</span>ects</h2>
+            <div class="grid-container">
+                <div class="item">Calculator
+                    <p>Simple Calculator app.</p>
+                </div>
+                <div class="item">Speech Recognition
+                    <p>Simple Calculator app.</p>
+                </div>
+                <div class="item">Websites
+                    <p>Several Websites as example a Sticky-Note Website.</p>
+                </div>
+                <div class="item">Basics
+                    <p>Basics of HTML and CSS. Now improve my skills in Javascript.</p>
+                </div>
+                <div class="grid-container2">
+                    <div class="item2">React Native</div>
+                    <div class="item2">HTML, CSS, Javascript</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact_me" class="contact">
+        <div class="contact_sector">
+            <h2><span class="word-underline">Con</span>tact me</h2>
+            <div class="mail">
+                <i class="fa-solid fa-envelope fa-3x" onclick = "parent.location='mailto:justin.rasi@gmx.ch'"></i>
+                <h3 onclick = "parent.location='mailto:justin.rasi@gmx.ch'">justin.rasi@gmx.ch</h3>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>© 2022 Justin Rasi. All rights reserved.</p>
+    </footer>
+</div>
+
+<div class="dark-mode">
+<img onclick="changeBackground()" src="res/dark-mode-icon.png" alt="dark mode" title="Wechsle Modus">
+</div>
+
+</body>
+</html>

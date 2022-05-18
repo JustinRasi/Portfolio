@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+/* Colors */
+:root {
+    --primary-color: #9c00ff;
+    --hover-color: #6900a9;
+    --background-color-dark: #171717;
+    --background-color-light: #ffffff;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: var(--background-color-dark);
+    color: white;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.button {
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+.button:hover {
+    color: white;
+    border-bottom: none;
+    background-color: var(--hover-color);
+    transition: background-color 200ms;
+}
+p {
+    color: #696969;
+    font-size: 1.3rem;
+    text-align: justify;
+}
+/* Title of ABOUT ME, KNOWLEDGE, FUTURE */
+h2 {
+    font-size: 4rem;
+    margin-bottom: 70px;
+    color: #ffffff;
+}
+
+#message {
+    color: white;
+}
+
+/* navigation bar */
+.navigation {
+    position: fixed;
+    width: 100%;
+    height: 200px;
+    left: 0;
+    top: 0;
+    background-color: transparent;
+    transition: height;
+}
+.navbar {
+    padding: 60px 400px 0 400px;
+    transition: padding-top 400ms;
+}
+.navigation p {
+    display: inline;
+    font-size: 2.4em;
+    color: white;
+    font-weight: 600;
+}
+.navigation a {
+    font-size: 1rem;
+    text-decoration: none;
+    float: right;
+    justify-content: space-between;
+    margin-left: 3.5rem;
+    color: white;
+    padding: 10px 15px 10px 15px;
+}
+.navigation a:hover {
+    border-bottom: 2px solid var(--primary-color);
+    transform: scale(1.05);
+}
+#contact {
+    background-color: var(--primary-color);
+    border-radius: 3px;
+    border-bottom: none;
+    color: white;
+}
+#contact:hover {
+    color: white;
+    border-bottom: none;
+    background-color: var(--hover-color);
+    transition: background-color 200ms;
+}
+
+.container {
+    margin: 550px 400px 40px 400px;
+}
+
+
+.platform-list {
+    background-color: #383838;
+    position: relative;
+    right: -100px;
+    width: 0;
+    height: 400px;
+    box-shadow: 3px 3px 10px black;
+    border-radius: 10px;
+    padding: 40px;
+    font-size: 30px;
+}
+.platform-list::after {
+    content: '';
+    z-index: -1;
+    background-color: currentColor;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    right: 400px;
+    top: -30px;
+    left: -40px;
+    border-radius: 10px;
+}
+.platform-list > * {
+    margin-top: 50px;
+}
+
+
+/* Start of Page */
+.title {
+    height: 65vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+.title > * {
+    flex: 1 1 auto;
+}
+/* Hi. I'm Justin -> Text */
+.title_sector h2 {
+    font-size: 7rem;
+    margin: 0;
+}
+.title_sector span {
+    color: var(--primary-color);
+}
+.title_sector a {
+    padding: 15px 20px 15px 20px;
+}
+.title_sector a:hover {
+    padding: 17px 22px 17px 22px;
+}
+/* p Text */
+#learning {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 80px;
+}
+.title_sector p {
+    margin-top: 70px;
+    margin-bottom: 40px;
+    font-size: 1rem;
+}
+
+
+/* About Me */
+.about {
+    padding-top: 20vh;
+    padding-bottom: 15vh;
+}
+.about_sector_content {
+    width: 50%;
+}
+
+.knowledge_item {
+    background-color: rgba(51, 51, 51, 0.1);
+    height: 300px;
+    width: 300px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px black;
+    font-size: 2rem;
+}
+
+.knowledge_item:hover {
+    transform: scale(1.03);
+}
+
+.knowledge_grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+/* Knowledge */
+.projects {
+    padding-top: 15vh;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 420px);
+    grid-template-rows: 150px;
+    column-gap: 15px;
+    row-gap: 15px;
+}
+.grid-container2 {
+    display: grid;
+    grid-template-columns: 203% 203%;
+    grid-template-rows: 120px;
+    column-gap: 15px;
+    row-gap: 15px;
+    text-align: center;
+}
+.item2 {
+    padding-top: 40px;
+    font-size: 30px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px black;
+}
+.item {
+    padding: 15px;
+    background-color: #333333;
+    border-radius: 10px;
+    font-size: 25px;
+    text-align: inherit;
+    box-shadow: 3px 3px 10px black;
+}
+
+/* Contact Me */
+.contact {
+    padding-top: 30vh;
+}
+.contact_sector {
+    padding: 2% 10% 2% 10%;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px black;
+}
+.mail {
+    display: inline-flex;
+    cursor: pointer;
+    margin-top: 25px;
+}
+.mail:hover {
+    transform: scale(1.05);
+    color: var(--primary-color)
+}
+.mail h3 {
+    margin-left: 15px;
+    margin-top: 13px;
+}
+
+/* Copyright Footer */
+footer {
+    position: relative;
+    margin-top: 400px;
+}
+footer p {
+    text-align: center;
+}
+
+.word-underline {
+    border-bottom: 10px solid var(--primary-color);
+}
+
+
+.light-mode {
+    background-color: var(--background-color-light);
+}
+.light-mode h2 {
+    color: #1c1c1c;
+}
+.light-mode .navbar a {
+    color: black;
+}
+.light-mode .isScrolledContent a {
+    color: white;
+}
+.light-mode .contact_sector h2 {
+    color: white;
+}
+.light-mode .navigation p {
+    color: black;
+}
+.light-mode .isScrolledContent p {
+    color: white;
+}
+
+
+.dark-mode, .dark-mode img {
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    width: 2%;
+    box-shadow: none;
+}
+.dark-mode img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+/* Navigation onScroll */
+.isScrolled {
+    width: 100%;
+    height: 100px;
+    left: 0;
+    top: 0;
+    background-color: #000000;
+    box-shadow: 0 0 5px black;
+    transition: height,background-color 400ms;
+}
+.isScrolledContent {
+    padding-top: 30px;
+    transition: padding-top 400ms;
+}
+
+@media screen and (max-width: 2400px) {
+    p {
+        font-size: 1.2rem;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+    .container {
+        margin: 230px 100px 25px 100px;
+    }
+    .navbar {
+        padding: 80px 100px 0 100px;
+        transition: padding-top 400ms;
+    }
+    .title_sector h2 {
+        font-size: 3.5rem;
+    }
+    .isScrolledContent {
+        padding-top: 30px;
+        transition: padding-top 400ms;
+    }
+    .navigation {
+        height: 80px;
+    }
+    .navbar {
+        padding-top: 22px;
+    }
+    .grid-container2 {
+        display: none;
+    }
+}
+@media screen and (max-width: 1250px) {
+    .container {
+        margin: 80px 40px 40px 40px
+    }
+    .navigation {
+        display: none;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    .title_sector p {
+    width: 100%;
+    }
+    .about_sector_content {
+        margin: 0;
+    }
+    .title_sector h2 {
+        font-size: 35px;
+    }
+    #learning {
+        font-size: 20px;
+        width: 100%;
+    }
+    .navigation {
+        height: 100px;
+    }
+}
