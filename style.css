@@ -315,6 +315,9 @@ footer p {
 .light-mode #message {
     color: black;
 }
+.light-mode .list li {
+    color: black;
+}
 
 
 .dark-mode, .dark-mode img {
