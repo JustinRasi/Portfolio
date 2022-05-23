@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
-/* Colors */
+/* variables */
 :root {
     --primary-color: #9c00ff;
     --hover-color: #6900a9;
     --background-color-dark: #171717;
     --background-color-light: #ffffff;
+    --box-shadow: 3px 3px 10px black;
+    --border-radius-card: 10px
 }
 html {
     scroll-behavior: smooth;
@@ -101,10 +103,11 @@ h2 {
 
 .platform-list {
     background-color: #383838;
-    position: relative;
+    position: absolute;
     right: -100px;
-    width: 0;
+    width: 400px;
     height: 400px;
+    right: 300px;
     box-shadow: 3px 3px 10px black;
     border-radius: 10px;
     padding: 40px;
@@ -117,7 +120,7 @@ h2 {
     position: absolute;
     width: 500px;
     height: 500px;
-    right: 400px;
+    right: 200px;
     top: -30px;
     left: -40px;
     border-radius: 10px;
@@ -169,7 +172,7 @@ h2 {
     padding-bottom: 15vh;
 }
 .about_sector_content {
-    width: 50%;
+    width: 60%;
 }
 
 .knowledge_item {
@@ -177,7 +180,7 @@ h2 {
     height: 300px;
     width: 300px;
     padding: 30px;
-    border-radius: 10px;
+    border-radius: var(--border-radius-card);
     box-shadow: 3px 3px 10px black;
     font-size: 2rem;
 }
@@ -214,13 +217,13 @@ h2 {
     padding-top: 40px;
     font-size: 30px;
     background-color: var(--primary-color);
-    border-radius: 10px;
+    border-radius: var(--border-radius-card);
     box-shadow: 3px 3px 10px black;
 }
 .item {
     padding: 15px;
     background-color: #333333;
-    border-radius: 10px;
+    border-radius: var(--border-radius-card);
     font-size: 25px;
     text-align: inherit;
     box-shadow: 3px 3px 10px black;
@@ -228,7 +231,7 @@ h2 {
 
 /* Contact Me */
 .contact {
-    padding-top: 30vh;
+    padding-top: 20vh;
 }
 .contact_sector {
     padding: 2% 10% 2% 10%;
@@ -236,8 +239,7 @@ h2 {
     position: absolute;
     left: 0;
     width: 80%;
-    border-radius: 10px;
-    box-shadow: 3px 3px 10px black;
+    box-shadow: var(--box-shadow);
 }
 .mail {
     display: inline-flex;
@@ -256,7 +258,7 @@ h2 {
 /* Copyright Footer */
 footer {
     position: relative;
-    margin-top: 400px;
+    margin-top: 500px;
 }
 footer p {
     text-align: center;
@@ -279,14 +281,20 @@ footer p {
 .light-mode .isScrolledContent a {
     color: white;
 }
+.light-mode .contact_sector {
+    background-color: #e0e0e0;
+}
 .light-mode .contact_sector h2 {
-    color: white;
+    color: #000000;
 }
 .light-mode .navigation p {
     color: black;
 }
 .light-mode .isScrolledContent p {
     color: white;
+}
+.light-mode .mail {
+    color: black;
 }
 
 
@@ -351,22 +359,23 @@ footer p {
 }
 @media screen and (max-width: 1250px) {
     .container {
-        margin: 80px 40px 40px 40px
+        margin: 150px 40px 40px 40px
     }
     .navigation {
         display: none;
     }
     h2 {
-        font-size: 30px;
+        font-size: 40px;
     }
     .title_sector p {
     width: 100%;
     }
     .about_sector_content {
         margin: 0;
+        width: 100%;
     }
     .title_sector h2 {
-        font-size: 35px;
+        font-size: 40px;
     }
     #learning {
         font-size: 20px;
@@ -374,5 +383,14 @@ footer p {
     }
     .navigation {
         height: 100px;
+    }
+    .platform-list {
+        display: none;
+    }
+    .item {
+        width: 63%;
+    }
+    p {
+        text-align: inherit;
     }
 }

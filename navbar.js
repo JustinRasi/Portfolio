@@ -14,8 +14,6 @@ function calculateYposition() {
     }
 }
 
-
-
 function changeBackground () {
     const bodyElement = document.body;
     bodyElement.classList.toggle('light-mode')
@@ -23,14 +21,28 @@ function changeBackground () {
 
 
 
-let messageArray = [" I'm Justin"];
-let textPosition = 0;
-let speed = 150;
+
+
+
 
 typewriter = () => {
-    document.querySelector("#message").
-        innerHTML = messageArray[0].substring(0, textPosition);
+    let message = " I'm Justin";
+    let currentTextPosition = 0;
+    let speed = 100;
+    let speed2 = 4000;
+    let textTarget = document.querySelector("#message");
+    let write = () => {
+        textTarget.innerHTML = message.substring(0, currentTextPosition);
 
-    if (textPosition++ !== messageArray[0].length) setTimeout(typewriter, speed);
+        if (currentTextPosition < message.length) {
+            currentTextPosition++;
+            setTimeout(write, speed);
+        } else {
+            currentTextPosition = 0;
+            setTimeout(write, speed2);
+        }
+
+    }
+    write()
 }
 window.addEventListener('load', typewriter)
