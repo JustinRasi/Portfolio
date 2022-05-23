@@ -100,11 +100,10 @@ h2 {
     margin: 550px 400px 40px 400px;
 }
 
-
+/* Git etc */
 .platform-list {
     background-color: #383838;
     position: absolute;
-    right: -100px;
     width: 400px;
     height: 400px;
     right: 300px;
