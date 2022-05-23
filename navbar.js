@@ -28,8 +28,8 @@ function changeBackground () {
 typewriter = () => {
     let message = " I'm Justin";
     let currentTextPosition = 0;
-    let speed = 100;
-    let speed2 = 4000;
+    let speed = 80;
+    let speed2 = 5000;
     let textTarget = document.querySelector("#message");
     let write = () => {
         textTarget.innerHTML = message.substring(0, currentTextPosition);

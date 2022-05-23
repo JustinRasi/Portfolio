@@ -167,13 +167,27 @@ h2 {
 
 /* About Me */
 .about {
-    padding-top: 20vh;
-    padding-bottom: 15vh;
+    padding-top: 25vh;
+    padding-bottom: 25vh;
 }
 .about_sector_content {
     width: 60%;
 }
+.list {
+    margin-top: 15px;
+    display: inline-flex;
+}
+.list li {
+    justify-content: space-between;
+    margin-right: 90px;
+    font-size: 20px;
+}
 
+/* Knowledge */
+.knowledge {
+    padding-top: 25vh;
+    padding-bottom: 25vh;
+}
 .knowledge_item {
     background-color: rgba(51, 51, 51, 0.1);
     height: 300px;
@@ -183,19 +197,19 @@ h2 {
     box-shadow: 3px 3px 10px black;
     font-size: 2rem;
 }
-
 .knowledge_item:hover {
     transform: scale(1.03);
 }
-
 .knowledge_grid-container {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 }
-/* Knowledge */
+
+/* Projects */
 .projects {
-    padding-top: 15vh;
+    padding-top: 25vh;
+    padding-bottom: 25vh;
 }
 .grid-container {
     display: grid;
@@ -230,7 +244,7 @@ h2 {
 
 /* Contact Me */
 .contact {
-    padding-top: 20vh;
+    padding-top: 25vh;
 }
 .contact_sector {
     padding: 2% 10% 2% 10%;
@@ -293,6 +307,9 @@ footer p {
     color: white;
 }
 .light-mode .mail {
+    color: black;
+}
+.light-mode #message {
     color: black;
 }
 
