@@ -113,6 +113,7 @@ h2 {
     border-radius: 10px;
     padding: 40px;
     font-size: 30px;
+    flex-wrap: wrap;
 }
 .platform-list::after {
     content: '';
@@ -193,7 +194,6 @@ h2 {
 }
 .knowledge_item {
     background-color: #2f2f2f;
-    height: 300px;
     width: 550px;
     padding: 30px;
     border-radius: var(--border-radius-card);
@@ -206,6 +206,9 @@ h2 {
     border-radius: var(--border-radius-card);
     padding: 10px;
     box-shadow: var(--box-shadow);
+}
+.knowledge_item ul:hover {
+    transform: scale(1.03);
 }
 .knowledge_item .html {
     width: 90%;
@@ -221,9 +224,6 @@ h2 {
 }
 .knowledge_item .react {
     width: 20%;
-}
-.knowledge_item:hover {
-    transform: scale(1.03);
 }
 .knowledge_grid-container {
     display: flex;
@@ -404,7 +404,7 @@ footer p {
         display: none;
     }
 }
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 700px) {
     .container {
         margin: 150px 10px 40px 10px
     }
@@ -440,7 +440,13 @@ footer p {
     p {
         text-align: inherit;
     }
-    .grid-container {
-        grid-template-columns: repeat(auto-fill, 510px);
+    footer {
+       margin-top: 350px;
+    }
+    .contact_sector h2 {
+        margin: 20px 0 20px 0;
+    }
+    .mail {
+        margin-top: 10px;
     }
 }
