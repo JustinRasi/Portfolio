@@ -263,7 +263,7 @@ h2 {
 }
 .item {
     padding: 15px;
-    background-color: #333333;
+    background-color: #313131;
     border-radius: var(--border-radius-card);
     font-size: 25px;
     text-align: inherit;
@@ -348,8 +348,8 @@ footer p {
 .dark-mode, .dark-mode img {
     position: fixed;
     bottom: 20px;
-    right: 40px;
-    width: 2%;
+    right: 30px;
+    width: 40px;
     box-shadow: none;
 }
 .dark-mode img:hover {
@@ -439,5 +439,8 @@ footer p {
     }
     p {
         text-align: inherit;
+    }
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, 510px);
     }
 }
