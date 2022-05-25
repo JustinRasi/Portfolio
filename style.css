@@ -406,7 +406,9 @@ footer p {
     .container {
         margin: 150px 10px 40px 10px
     }
-
+    .title_sector h2 {
+        font-size: 4rem;
+    }
     .navigation {
         display: none;
     }
@@ -422,9 +424,6 @@ footer p {
     .about_sector_content {
         margin: 0;
         width: 100%;
-    }
-    .title_sector h2 {
-        font-size: 40px;
     }
     #learning {
         font-size: 20px;
