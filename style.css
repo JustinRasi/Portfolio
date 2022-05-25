@@ -398,6 +398,16 @@ footer p {
     }
 }
 
+@media  screen and (max-width: 1150px) {
+    .navbar a {
+        display: none;
+    }
+    .platform-list {
+        display: none;
+    }
+
+}
+
 /* CSS for Handy's upto 700px width */
 @media screen and (max-width: 700px) {
     .container {
@@ -406,8 +416,11 @@ footer p {
     .title_sector h2 {
         font-size: 4rem;
     }
-    .navigation {
+    .navbar a {
         display: none;
+    }
+    .navbar {
+        padding-left: 20px;
     }
     .grid-container {
         grid-template-columns: 145%;
