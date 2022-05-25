@@ -404,6 +404,8 @@ footer p {
         display: none;
     }
 }
+
+/* CSS for Handy's upto 700px width */
 @media screen and (max-width: 700px) {
     .container {
         margin: 150px 10px 40px 10px
@@ -430,6 +432,9 @@ footer p {
     }
     .navigation {
         height: 100px;
+    }
+    .knowledge_item ul {
+        font-size: 8px;
     }
     .platform-list {
         display: none;
