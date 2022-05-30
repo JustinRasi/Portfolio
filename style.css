@@ -8,7 +8,7 @@
     --hover-color: #6900a9;
     --background-color-dark: #171717;
     --background-color-light: #ffffff;
-    --box-shadow: 3px 3px 10px black;
+    --box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.63);
     --border-radius-card: 10px;
     --background-color-card: #2f2f2f;
 }
@@ -40,6 +40,7 @@ p {
     color: #696969;
     font-size: 1.3rem;
     text-align: justify;
+    margin: 0 0 50px 0;
 }
 /* Title of ABOUT ME, KNOWLEDGE, FUTURE */
 h2 {
@@ -110,7 +111,7 @@ h2 {
     width: 250px;
     height: 250px;
     right: 250px;
-    box-shadow: 3px 3px 10px black;
+    box-shadow: var(--box-shadow);
     border-radius: 10px;
     padding: 40px;
     font-size: 1.7rem;
@@ -188,7 +189,7 @@ h2 {
 }
 .list li {
     justify-content: space-between;
-    margin-right: 90px;
+    margin-right: 100px;
     font-size: 20px;
 }
 
@@ -202,7 +203,7 @@ h2 {
     width: 550px;
     padding: 30px;
     border-radius: var(--border-radius-card);
-    box-shadow: 3px 3px 10px black;
+    box-shadow: var(--box-shadow);
     font-size: 2rem;
 }
 .knowledge_item ul {
@@ -242,6 +243,7 @@ h2 {
     padding-bottom: 25vh;
 }
 .projects p {
+    margin-top: 20px;
     text-align: inherit;
 }
 .grid-container {
@@ -253,7 +255,7 @@ h2 {
 }
 .grid-container2 {
     display: grid;
-    grid-template-columns: 203% 203%;
+    grid-template-columns: 49.5% 49.5%;
     grid-template-rows: 120px;
     column-gap: 15px;
     row-gap: 15px;
@@ -264,7 +266,7 @@ h2 {
     font-size: 30px;
     background-color: var(--primary-color);
     border-radius: var(--border-radius-card);
-    box-shadow: 3px 3px 10px black;
+    box-shadow: var(--box-shadow);
 }
 .item {
     padding: 15px;
@@ -272,7 +274,7 @@ h2 {
     border-radius: var(--border-radius-card);
     font-size: 25px;
     text-align: inherit;
-    box-shadow: 3px 3px 10px black;
+    box-shadow: var(--box-shadow);
 }
 
 /* Contact Me */
@@ -285,8 +287,9 @@ h2 {
     text-align: center;
     position: absolute;
     left: 0;
+    border-radius: 0;
     width: 80%;
-    box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow)
 }
 .mail {
     display: inline-flex;
