@@ -37,7 +37,7 @@ a {
     transition: background-color 200ms;
 }
 p {
-    color: #696969;
+    color: #b0b0b0;
     font-size: 1.3rem;
     text-align: justify;
     margin: 0 0 50px 0;
@@ -324,6 +324,9 @@ footer p {
 }
 .light-mode h2 {
     color: #1c1c1c;
+}
+.light-mode p {
+    color: #696969;
 }
 .light-mode .navbar a {
     color: black;
