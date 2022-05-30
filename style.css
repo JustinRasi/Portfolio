@@ -100,7 +100,7 @@ h2 {
 }
 
 .container {
-    margin: 550px 400px 40px 400px;
+    margin: 450px 400px 40px 400px;
 }
 
 /* Git etc */
@@ -131,7 +131,11 @@ h2 {
 .platform-list > * {
     margin-top: 50px;
 }
-
+.platform-list i:hover {
+    cursor: pointer;
+    color: var(--hover-color);
+    transform: scale(1.1);
+}
 
 /* Start of Page */
 .title {
