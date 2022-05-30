@@ -218,6 +218,7 @@ h2 {
 }
 .knowledge_item .html {
     width: 90%;
+    margin-top: 30px;
 }
 .knowledge_item .css {
     width: 70%;
@@ -230,6 +231,10 @@ h2 {
 }
 .knowledge_item .react {
     width: 20%;
+    margin-bottom: 0;
+}
+.knowledge_item .git {
+    margin-top: 30px;
 }
 .knowledge_grid-container {
     display: flex;
