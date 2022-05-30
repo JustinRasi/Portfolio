@@ -440,7 +440,16 @@ footer p {
         width: 100%;
     }
     .navigation {
-        height: 100px;
+        height: 4rem;
+        font-size: 0.6rem;
+    }
+    .navbar {
+        display: none;
+        transition: all 400ms;
+    }
+    .isScrolledContent {
+        display: block;
+        transition: all 400ms;
     }
     .knowledge_item ul {
         font-size: 14px;
