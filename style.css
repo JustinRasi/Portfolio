@@ -108,12 +108,10 @@ h2 {
 .platform-list {
     background-color: #383838;
     position: absolute;
-    right: 200px;
-    width: 250px;
-    height: 200px;
+    right: 250px;
     box-shadow: var(--box-shadow);
     border-radius: 10px;
-    padding: 40px;
+    padding: 20px 60px 60px 60px;
     font-size: 1.7rem;
 }
 .platform-list::after {
@@ -126,6 +124,10 @@ h2 {
     cursor: pointer;
     color: var(--hover-color);
     transform: scale(1.1);
+}
+.platform-list h2 {
+    margin: 0 0 10px 0;
+    font-size: 40px;
 }
 
 /* Start of Page */
@@ -433,8 +435,8 @@ footer p {
         margin: 150px 10px 40px 10px
     }
     .platform-list {
-        left: 10px;
-        width: 74%;
+        left: 20px;
+        width: 60%;
     }
     .title_sector h2 {
         font-size: 4rem;
