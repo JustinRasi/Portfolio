@@ -108,26 +108,16 @@ h2 {
 .platform-list {
     background-color: #383838;
     position: absolute;
-    width: 15%;
-    height: 15%;
-    right: 300px;
+    right: 200px;
+    width: 250px;
+    height: 200px;
     box-shadow: var(--box-shadow);
     border-radius: 10px;
     padding: 40px;
     font-size: 1.7rem;
-    flex-wrap: wrap;
 }
 .platform-list::after {
-    content: '';
-    z-index: -1;
-    background-color: currentColor;
-    position: absolute;
-    width: 80%;
-    height: 80%;
-    right: 200px;
-    top: -20px;
-    left: -20px;
-    border-radius: 10px;
+
 }
 .platform-list > * {
     margin-top: 20px;
@@ -384,7 +374,8 @@ footer p {
     height: 100px;
     left: 0;
     top: 0;
-    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.73);
+    backdrop-filter: saturate(180%) blur(20px);
     box-shadow: 0 0 5px black;
     transition: height,background-color 400ms;
 }
@@ -427,7 +418,11 @@ footer p {
         display: none;
     }
     .platform-list {
-        display: none;
+        left: 100px;
+        top: 800px;
+    }
+    .title {
+        margin-bottom: 300px;
     }
 
 }
@@ -436,6 +431,10 @@ footer p {
 @media screen and (max-width: 700px) {
     .container {
         margin: 150px 10px 40px 10px
+    }
+    .platform-list {
+        left: 10px;
+        width: 74%;
     }
     .title_sector h2 {
         font-size: 4rem;
@@ -476,9 +475,6 @@ footer p {
     }
     .knowledge_item ul {
         font-size: 14px;
-    }
-    .platform-list {
-        display: none;
     }
     .item {
         width: 63%;
