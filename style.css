@@ -117,10 +117,15 @@ h2 {
 .platform-list > * {
     margin-top: 20px;
 }
+.platform-list i {
+    background-color: var(--primary-color);
+    padding: 10px;
+    border-radius: var(--border-radius-card);
+    width: 90%;
+}
 .platform-list i:hover {
     cursor: pointer;
-    color: var(--hover-color);
-    transform: scale(1.1);
+    transform: scale(1.03);
 }
 .platform-list h2 {
     margin: 0 0 10px 0;
