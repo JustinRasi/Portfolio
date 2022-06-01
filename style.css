@@ -106,7 +106,7 @@ h2 {
 
 /* Git etc */
 .platform-list {
-    background-color: #383838;
+    background-color: #151515;
     position: absolute;
     right: 250px;
     box-shadow: var(--box-shadow);
@@ -178,10 +178,14 @@ h2 {
 }
 .list li {
     justify-content: space-between;
-    margin-right: 85px;
+    margin-right: 40px;
     font-size: 20px;
     text-transform: uppercase;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
+    background-color: var(--primary-color);
+    box-shadow: var(--box-shadow);
+    border-radius: 200px;
+    padding: 15px;
 }
 
 /* Knowledge */
@@ -190,11 +194,8 @@ h2 {
     padding-bottom: 25vh;
 }
 .knowledge_item {
-    background-color: var(--background-color-card);
     width: 550px;
     padding: 30px;
-    border-radius: var(--border-radius-card);
-    box-shadow: var(--box-shadow);
     font-size: 2rem;
 }
 .knowledge_item ul {
