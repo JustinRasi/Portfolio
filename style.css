@@ -172,7 +172,6 @@ h2 {
 }
 .knowledge_item {
     width: 550px;
-    padding: 30px;
     font-size: 2rem;
 }
 .knowledge_item ul {
@@ -440,7 +439,7 @@ footer p {
         display: none;
     }
     .title {
-        margin-bottom: 300px;
+        margin-bottom: 50px;
     }
 
 }
